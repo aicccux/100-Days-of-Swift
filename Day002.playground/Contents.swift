@@ -28,14 +28,14 @@ let pythons = ["Eric", "Graham", "John", "Michael", "Terry", "Terry"]
 // 5.Dictionaries
 let heights = [
     "Taylor Swift": 1.78,
-    "Ed Sheeran": 1.73
+    "Ed Sheeran": 1.73,
 ]
 heights["Taylor Swift"]
 
 // 6.Dictionary default values
 let favoriteIceCream = [
     "Paul": "Chocolate",
-    "Sophie": "Vanilla"
+    "Sophie": "Vanilla",
 ]
 favoriteIceCream["Paul"]
 favoriteIceCream["Charlotte"]
@@ -48,8 +48,8 @@ teams["Paul"] = "Red"
 var results = [Int]()
 var words = Set<String>()
 var number = Set<Int>()
-var scores = Dictionary<String, Int>()
-var results_array = Array<Int>()
+var scores = [String: Int]()
+var results_array = [Int]()
 
 // 8.Enumerations
 let result1 = "failure"
@@ -80,11 +80,12 @@ enum Planet: Int {
 let earth = Planet(rawValue: 2)
 
 // 11.Complex types: Summary
-    /* Arrays, sets, tuples, and dictionaries let you store a group of items under a single value. They each do this in different ways, so which you use depends on the behavior you want.
-        Arrays store items in the order you add them, and you access them using numerical positions.
-        Sets store items without any order, so you can’t access them using numerical positions.
-        Tuples are fixed in size, and you can attach names to each of their items. You can read items using numerical positions or using your names.
-        Dictionaries store items according to a key, and you can read items using those keys.
-        Enums are a way of grouping related values so you can use them without spelling mistakes.
-        You can attach raw values to enums so they can be created from integers or strings, or you can add associated values to store additional information about each case.
-        */
+/*
+    Arrays, sets, tuples, and dictionaries let you store a group of items under a single value. They each do this in different ways, so which you use depends on the behavior you want.
+    Arrays store items in the order you add them, and you access them using numerical positions.
+    Sets store items without any order, so you can’t access them using numerical positions.
+    Tuples are fixed in size, and you can attach names to each of their items. You can read items using numerical positions or using your names.
+    Dictionaries store items according to a key, and you can read items using those keys.
+    Enums are a way of grouping related values so you can use them without spelling mistakes.
+    You can attach raw values to enums so they can be created from integers or strings, or you can add associated values to store additional information about each case.
+ */
