@@ -35,6 +35,7 @@ extension Int {
     func squared() -> Int {
         return self * self
     }
+    
     var isEven: Bool {
         return self % 2 == 0
     }

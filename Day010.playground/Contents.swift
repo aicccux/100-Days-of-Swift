@@ -12,6 +12,7 @@ class Dog {
         self.breed = breed
     }
 }
+
 let poppy = Dog(name: "Poppy", breed: "Poodle")
 
 // 2.Class inheritance
@@ -27,11 +28,13 @@ class _Dog {
         print("Woof!")
     }
 }
+
 class _Poodle: _Dog {
     override func makeNoise() {
         print("Yip!")
     }
 }
+
 let _poppy = _Poodle()
 _poppy.makeNoise()
 
@@ -50,6 +53,7 @@ final class __Dog {
 class Singer {
     var name = "Taylor Swift"
 }
+
 var singer = Singer()
 print(singer.name)
 var singerCopy = singer
@@ -75,6 +79,7 @@ class Person {
         print("Hello, I'm \(name)")
     }
 }
+
 for _ in 1...3 {
     let person = Person()
     person.printGreeting()
@@ -85,6 +90,7 @@ class _Singer {
     var name = "Taylor Swift"
     //    let name = "Taylor Swift"
 }
+
 let taylor = _Singer()
 taylor.name = "Ed Sheeran"
 print(taylor.name)

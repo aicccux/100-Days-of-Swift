@@ -49,6 +49,7 @@ func travel() -> (String) -> Void {
         print("I'm going to \($0)")
     }
 }
+
 let result = travel()
 result("London")
 let result2: Void = travel()("London")
@@ -62,6 +63,7 @@ func _travel() -> (String) -> Void {
         counter += 1
     }
 }
+
 let _result = _travel()
 _result("London")
 _result("London")

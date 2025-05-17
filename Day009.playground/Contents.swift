@@ -11,6 +11,7 @@ struct User {
         print("Creating a new user!")
     }
 }
+
 var user = User()
 user.username = "twostraws"
 
@@ -30,6 +31,7 @@ struct FamilyTree {
         print("Creating family tree!")
     }
 }
+
 struct _Person {
     var name: String
     lazy var familyTree = FamilyTree()
@@ -38,6 +40,7 @@ struct _Person {
         self.name = name
     }
 }
+
 var ed = _Person(name: "Ed")
 ed.familyTree
 
@@ -52,6 +55,7 @@ struct Student {
         Student.classSize += 1
     }
 }
+
 let _ed = Student(name: "Ed")
 let taylor = Student(name: "Taylor")
 print(Student.classSize)

@@ -35,6 +35,7 @@ struct Progress {
         }
     }
 }
+
 var progress = Progress(task: "Loading data", amount: 0)
 progress.amount = 30
 progress.amount = 80
@@ -48,6 +49,7 @@ struct City {
         return population * 1000
     }
 }
+
 let london = City(population: 9_000_000)
 london.collectTaxes()
 
@@ -59,6 +61,7 @@ struct Person {
         name = "Anonymous"
     }
 }
+
 var person = Person(name: "Ed")
 print(person.name)
 person.makeAnonymous()

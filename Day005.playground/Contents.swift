@@ -67,6 +67,7 @@ ___square(numbers: 1, 2, 3, 4, 5)
 enum PasswordError: Error {
     case obvious
 }
+
 func checkPassword(_ password: String) throws -> Bool {
     if password == "password" {
         throw PasswordError.obvious
@@ -87,6 +88,7 @@ do {
 func doubleInPlace(number: inout Int) {
     number *= 2
 }
+
 var myNum = 10
 doubleInPlace(number: &myNum)
 
